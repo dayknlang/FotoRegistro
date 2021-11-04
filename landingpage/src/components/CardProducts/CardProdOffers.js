@@ -1,16 +1,15 @@
 import React from 'react';
-import { ContainerCard, DiscountStamp, ProductDescription, Price, PriceDiscount } from './styled'; 
+import { ContainerCard, DiscountStamp, ProductDescription, Price, PriceDiscount } from './styled';
 
-const CardProducts = (props) => {
+const CardProdOffers = (props) => {
     return (
         <div>
             <ContainerCard backgroundImage={props.backgroundImage}>
-               
-               <DiscountStamp>
+                <DiscountStamp>
                     <p>{props.discountStamp}</p>
                     <p>OFF!</p>
                 </DiscountStamp>
-
+                
                 <ProductDescription>
                     <span>{props.productName} 
                         <strong>{props.productNameBold}</strong>
@@ -21,15 +20,16 @@ const CardProducts = (props) => {
                         <p>{props.price}</p>
                         <p>{props.priceDetail}</p>
                     </Price>
+                    
                     <PriceDiscount>
-                        <p>{props.PriceDiscount}</p>
+                        <p>{props.priceDiscount}</p>
                         <p>{props.priceDiscountBold}</p>
                     </PriceDiscount>
+                    
                     <button>Eu Quero!</button>
                 </ProductDescription>
-
             </ContainerCard>
         </div>
     )
 }
-export default CardProducts;
+export default CardProdOffers;

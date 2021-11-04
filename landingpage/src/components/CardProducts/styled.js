@@ -2,22 +2,28 @@ import styled from 'styled-components';
 
 export const ContainerCard = styled.div `
     @media(min-width:320px){
-        background: transparent url(${props => props.backgroundImage}) 0% 0% no-repeat padding-box;
+        background: transparent url(${props => props.backgroundImage}) 50% 50% no-repeat padding-box;
         background-color: #F3F0F7;
         display: flex;
         item-align: center;
         justify-content: space-between;
+        
         top: 423px;
         left: 11px;
         width: 338px;
         height: 154px;
-        margin: 16px auto 11px;
+        margin: 16px auto 12px;
         border-radius: 28px;
-        
+        top: 674px;
+        left: 592px;
+        width: 352px;
+        height: 228px;
+        margin-top:6px;
+        margim-bottom: 12px;
     }
     
     @media only screen and (min-width: 361px) {
-        margin-right: 32px;
+        margin-right: 10px;
         top: 674px;
         left: 592px;
         width: 352px;
