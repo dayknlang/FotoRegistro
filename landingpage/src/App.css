@@ -1,53 +1,92 @@
-*{
-  box-sizing: border-box;
-  padding: 0;
+* {
   margin: 0;
-  
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
 }
+
+/* .slick-prev {
+display: none;
+visibility: hidden;
+}
+.slick-next:before  {
+content: '' !important;
+} */
 
 .center {
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 2%;
+  padding: 10px 2%;
   display:flex;
-  
+  flex-direction: row;
 }
 
+
 .header-main{
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-gap: 0px 8px;
-  top: 560px;
+  display: flex;
+  justify-content: space-around; 
+  top: 0px;
   left: 0px;
-  width: 1920px;
+  width: 100%;
   height: 60px;
   background: #FC525F 0% 0% no-repeat padding-box;
   opacity: 1;
-  padding: 20px 2%;
-  /* justify-content: space-between; */
-  
 }
-
 
 .logoMeliuz{
   top: 13px;
-  left: 801px;
+  left: 35px;
   width: 81px;
   height: 34px;
   background: transparent url('assets/img/meliuz-logo.png') 0% 0% no-repeat padding-box;
+  margin-right: 17px;
+  margin-left: 34px;
   opacity: 1;
-  /* margin-left: 4px; */
- 
 }
 
 .logoFotoRegistro{
-  top: 13px;
-  left: 945px;
+  margin-top: 6px;
+  left: 151px;
   width: 175px;
   height: 34px;
-  background: transparent url('assets/img/logo-fr.png') 0% 0% no-repeat padding-box;
+  background: transparent url('assets/img/logo-fr.png') 0% 10% no-repeat padding-box;
+  margin-right: 17px;
+  margin-left: 34px;
   opacity: 1;
-  /* margin-right: 70px; */
+}
+
+
+
+.container-banner{
+  top: 60px;  
+  left: 0px;
+  width: 100%;
+  height: 500px;
+  background: transparent url('assets/img/Banner-desktop.png') 50% 0% no-repeat padding-box;
+  opacity: 1;
+
+  @media only screen and (min-width: 800px) {
+    height: 500px;
+    background: transparent url('assets/img/Banner-desktop.png') 50% 0% no-repeat padding-box;
+  }
 
   
 }
+
+/* 
+.space-logos{
+  opacity: 1;top: 13px;
+  left: 133px;
+  width: 0px;
+  height: 34px;
+  border: 1px solid #FFFFFF;
+}
+
+
+@media (min-width: 361px) and (max-width: 799px){
+  height: 100vh;
+  background: transparent url('assets/img/Banner-desktop@2x.png') 0% 0% no-repeat padding-box;
+} 
+
+*/
+      
