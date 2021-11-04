@@ -5,6 +5,11 @@
   border: none;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 .slick-prev {
 display: none;
 visibility: hidden;
@@ -20,7 +25,6 @@ content: '' !important;
   padding: 10px 2%;
   display: flex;
   flex-direction: row;
-
 }
 
 .header-main {
@@ -104,30 +108,3 @@ h2 {
   opacity: 1
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.space-logos{
-  opacity: 1;top: 13px;
-  left: 133px;
-  width: 0px;
-  height: 34px;
-  border: 1px solid #FFFFFF;
-}
-
-
-@media (min-width: 361px) and (max-width: 799px){
-  height: 100vh;
-  background: transparent url('assets/img/Banner-desktop@2x.png') 0% 0% no-repeat padding-box;
-} 
-
-*/
