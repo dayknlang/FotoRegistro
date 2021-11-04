@@ -12,12 +12,14 @@ function App() {
        <div className="header-main">
         <div className="center">
             <div className="logoMeliuz"></div> 
-           
             <div className="logoFotoRegistro"></div> 
-                     
           </div>
+         
         </div>
+        <div className="container-banner"></div>
     </div>
+
+    
   
   );
 }
