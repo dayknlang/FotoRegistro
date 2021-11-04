@@ -1,34 +1,29 @@
-
 import * as React from 'react';
-import './App.css';
-import FeatureOffers from '../src/components/Navigation/FeaturedOffers'
-// import Header from '../src/components/Header/header';
-// import NavBody from '../src/components/Navigation/NavBody';
-// import NavProperties from '../src/components/Navigation/NavProperties';
+import { render } from 'react-dom';
 
+import './App.css';
+import Header from '../src/components/Header/header';
+import FeatureOffers from '../src/components/Navigation/FeaturedOffers';
+import CarouselOffers from '../src/components/Navigation/CarouselOffers';
 
 function App() {
   return (
     <div className="App">
-       <div className="header-main">
-        <div className="center">
-            <div className="logoMeliuz"></div> 
-            <div className="logoFotoRegistro"></div> 
-          </div>
-         
-        </div>
+       <Header/>
         <div className="container-banner"></div>
-        <div className="featuredOffers">
-          <h2>Ofertas em destaque:</h2>
+        <h2>Ofertas em destaque:</h2>
+        <div className="featuredOffers">           
+            <FeatureOffers/>
         </div>
-          <div className="break"></div>
-          <FeatureOffers/>
-
+        <h2>Demais Ofertas:</h2>
+        <div className="carouselOffers">
+          <CarouselOffers/>
+        </div>
     </div>
-
-    
-  
+   
   );
+  
 }
+render(<App />, document.getElementById("root"));
 
 export default App;
